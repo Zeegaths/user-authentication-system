@@ -10,9 +10,8 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
-  const auth = firebase.auth();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
   
   // Elements
   const loginForm = document.getElementById("login-form");
